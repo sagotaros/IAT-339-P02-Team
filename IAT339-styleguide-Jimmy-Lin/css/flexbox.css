@@ -1,0 +1,36 @@
+* {
+    box-sizing:border-box;
+}
+
+
+.box{
+    padding:2%;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-item-nav{
+    font-size: 1.5em;
+    font-weight: bold;
+    flex: 1 1;
+    text-align: center;
+}
+
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.box-item-image img{
+    max-width: 100%;
+}
+
+.box-item-text{
+    margin: auto;
+    text-align: center;
+}
+

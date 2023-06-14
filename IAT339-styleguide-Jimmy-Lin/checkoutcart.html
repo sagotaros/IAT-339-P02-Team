@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout Cart</title>
+
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/fonts.css" type="text/css" rel="stylesheet">
+    <link href="css/flexbox.css" type="text/css" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <H1>KOSMOS</H1>
+      <nav class="nav-main box">
+        
+        <a href="index.html" class="nav-main-item box-item-nav" >Style Guide</a>        
+        <a href="product.html" class="nav-main-item box-item-nav" >Product</a>
+        <a href="checkoutcart.html" class="nav-main-item box-item-nav">Checkout Cart</a>
+      </nav>
+    </header>
+
+        <h2>Checkout Cart</h2>
+        <section class="cart-items">
+        <div class="image-box">
+          <img src="https://smglobalshop.com/cdn/shop/products/pre-order-2023-aespa-1st-concert-synk-hyper-line-fur-mini-bag-set-blue-ver-439001_960x_crop_center.jpg?v=1677661185" alt="picture">
+        </div>
+        <div class="details">
+          <h3>FUR MINI BAG SET [BLUE VER.]</h3>
+        </div>
+        <div class="amount">
+          <div name="count">1</div>
+        </div>
+        <div class="price">
+          <div name="money">$118.00</div>
+        </div>
+      </section>
+      <section class="cart-items">
+        <div class="image-box">
+          <img src="https://smglobalshop.com/cdn/shop/products/pre-order-aespa-oh-caendy-pocket-ball-cap-573207_960x_crop_center.jpg?v=1678889048" alt="picture">
+        </div>
+        <div class="details">
+          <h3>[OH! CAENDY POCKET] BALL CAP</h3>
+        </div>
+        <div class="amount">
+          <div name="count">1</div>
+        </div>
+        <div class="price">
+          <div name="money">$56.00</div>
+        </div>
+      </section>
+      <hr>
+      <section class="total-price">
+        <div class="total">Total: $174.00</div>
+      </section>
+
+
+        <h2>Payment Form</h2>
+        <form method="post" action="#">
+          <fieldset class="card-info" name="card-info">
+          <label for="card-num">Card Number:
+          <input type="text" id="card-num" placeholder="1234 1234 1234 1234" required>
+        </label>
+
+          <label for="postal-code">Postal Code:
+          <input type="text" id="postal-code" placeholder="A1A 1A1" required>
+        </label>
+
+          <label for="country">Country:
+          <select name="country">
+            <option value="Canada" selected>Canada</option>
+            <option value="United States">United States</option>
+            <option value="China">China</option>
+            <option value="Korea">Korea</option>
+            <option value="Japan">Japan</option>
+          </select>
+        </label>
+
+          <label for="exp-date">Expiration Date:
+          <input type="month" id="exp-date" name="exp-date" required>
+        </label>
+
+          <label for="CVV">CVV:
+          <input type="text" id="CVV" name="CVV" placeholder="123" required>
+        </label>
+      </fieldset>
+      <fieldset class="checkout" name="checkout">
+          <input class="button" type="submit" name="submit" value="Checkout">
+        </fieldset>
+        </form>
+
+</html>

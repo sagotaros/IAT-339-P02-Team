@@ -1,0 +1,270 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Karla";
+  margin:1rem;
+  padding: 2rem;
+  color: #313639;
+  background-color: #F6F5EC;
+}
+
+h1, h2, h3, h4{
+  font-family: "Rubik";
+}
+
+.element {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+section{
+  margin-top: 2rem;
+  margin-top: 2rem;
+}
+
+.color1{
+  background-color: #FFF1DB;
+}
+
+.color2{
+  background-color: #313639;
+  color:white;
+}
+
+.color3{
+  background-color: #F6F5EC;
+}
+
+.color4{
+  background-color: #F27EB1;
+}
+
+.color5{
+  background-color: #6C6D9B;
+}
+
+.color6{
+  background-color: #F9B3BB;
+}
+
+
+
+/*https://www.w3schools.com/css/css_image_transparency.asp*/
+img{
+  width:30rem;
+  max-width: 100%;
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+}
+
+.image-box{
+  width:13rem;
+  max-width: 100%;
+  text-align: center;
+  display:flex;
+}
+
+img:hover{
+  opacity: 0.70;
+  transform: scale(1.05);
+}
+
+h2.general {
+  margin-top: 6rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  max-width:30rem;
+  margin-top: 0;
+}
+
+a{
+  margin-right: 1rem;
+  color:#6C6D9B;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active{
+  color:#F27EB1;
+  transform: scale(1.05);
+  text-decoration:underline;
+}
+
+nav{
+  font-size:1.25rem;
+}
+
+.button{
+
+
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  transition: background-color 0.5s ease-out;
+
+  background: #6C6D9B;
+  border: 0;
+  color:white;
+  cursor: pointer;
+  font-weight: bold;
+  padding:10px 20px;
+}
+
+.cart-items{
+  justify-content: space-between;
+  display:flex;
+  margin:5rem;
+  align-items: center;
+}
+
+.total-price{
+  font-size: 1.50rem;
+  font-weight: bold;
+  justify-content: right;
+  width: 97%;
+  display:flex;
+  margin-right:5.2rem;
+  margin-bottom: 5rem;
+}
+
+.amount{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.price{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.button:hover, .button:focus, .button:active{
+  background-color: #F27EB1;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 10px 10px 0 0px #313639;
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+  color:white;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+form{
+  overflow:hidden;
+  max-width: 55rem;
+}
+
+fieldset{
+  border:0;
+  margin:0;
+  padding:0;
+}
+
+input{
+  border-radius: 2px;
+  padding: 1%;
+}
+
+input:hover{
+  background-color: #FFF1DB;
+}
+
+select{
+  border-radius: 2px;
+  padding: 1%;
+}
+
+select:hover{
+  background-color: #FFF1DB;
+}
+
+.card-info{
+  padding: 20px 20px 0 20px;
+}
+
+.card-info label{
+  color: black;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.checkout .button{
+  background: #6C6D9B;
+  border: 0;
+  color:white;
+  cursor: pointer;
+  font-weight: bold;
+  padding:10px 20px;
+  
+}    
+/*https://www.w3schools.com/css/css3_buttons.asp*/
+.checkout .button:hover,.checkout .button:focus,.checkout .button:active{
+  background-color: #F27EB1;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 10px 10px 0 0px #313639;
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+  color:white;
+  text-decoration: none;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200);
+}
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
