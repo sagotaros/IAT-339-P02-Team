@@ -68,6 +68,11 @@ img{
   transition: opacity .5s ease-in-out;
 }
 
+.cart-icon{
+  width:2.5rem;
+  max-width: 100%;
+}
+
 .image-box{
   width:13rem;
   max-width: 100%;
