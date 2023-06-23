@@ -2,19 +2,25 @@
     box-sizing:border-box;
 }
 
+.nav-main{
+    display:flex;
+    width: 100%;
+    margin-bottom: 5%;
+}
 
 .box{
-    padding:2%;
     flex: 1;
+    padding-bottom: 5%;
     display: flex;
     justify-content: space-around;
 }
 
+
 .box-item-nav{
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: bold;
-    flex: 1 1;
-    text-align: center;
+    flex: 1;
+    line-height: 10px;
 }
 
 
@@ -30,7 +36,6 @@
 }
 
 .box-item-text{
-    margin: auto;
-    text-align: center;
+    text-align: left;
 }
 

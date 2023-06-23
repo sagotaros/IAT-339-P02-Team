@@ -27,6 +27,7 @@ h1, h2, h3, h4{
   border-top-color: black;
 }
 
+
 section{
   margin-top: 2rem;
   margin-top: 2rem;
@@ -109,7 +110,19 @@ a:hover, a:focus, a:active{
 }
 
 nav{
+  flex:1;
   font-size:1.25rem;
+  text-align: right;
+}
+
+nav ul{
+  display:inline-block;
+  list-style-type: none;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .button{
@@ -190,6 +203,7 @@ fieldset{
 input{
   border-radius: 2px;
   padding: 1%;
+  margin: 5%;
 }
 
 input:hover{
