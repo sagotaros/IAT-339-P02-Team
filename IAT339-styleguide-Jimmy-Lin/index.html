@@ -79,7 +79,8 @@
 
       <section class="element">
         <h3>Text Input Field with Label</h3>
-        <label>Name:
+        <legend>Name:</legend>
+        <label>
           <input type="text" name="name" placeholder="Karina">
         </label>
       </section>
@@ -87,11 +88,13 @@
 
       <section class="element">
         <h3>Radio Button with Label</h3>
-        <label>Versions:
-          <input type="radio" name="versions" value="A" checked> A
-          <input type="radio" name="versions" value="B" checked> B
-          <input type="radio" name="versions" value="C" checked> C
-        </label>
+        <legend>Versions:</legend>
+        <label for="verA">A</label>
+          <input type="radio" name="versions" id="verA" value="A" checked>
+          <label for="verB">B</label>
+          <input type="radio" name="versions" id="verB" value="B" checked> 
+          <label for="verC">C</label>
+          <input type="radio" name="versions" id="verC" value="C" checked>
       </section>
 
 
@@ -213,7 +216,7 @@
         </label>
 
           <label for="country">Country:
-          <select name="country">
+          <select name="country" id="country">
             <option value="Canada" selected>Canada</option>
             <option value="United States">United States</option>
             <option value="China">China</option>
