@@ -8,6 +8,10 @@
     margin-bottom: 5%;
 }
 
+.nav-main h1 a{
+    text-decoration: none;
+}
+
 .box{
     display: flex;
     justify-content: space-between;
@@ -31,6 +35,10 @@
     font-weight: bold;
     flex: 1;
     vertical-align: middle;
+}
+
+.current-page{
+    color:#F27EB1;
 }
 
 .product{
