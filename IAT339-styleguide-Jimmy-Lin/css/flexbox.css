@@ -16,6 +16,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@media (max-width:600px){
+    .box{
+        flex-direction: column;
+    }
 }
 
 .container{
