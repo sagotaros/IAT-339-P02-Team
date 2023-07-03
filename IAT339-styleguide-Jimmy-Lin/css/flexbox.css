@@ -58,6 +58,13 @@
     flex-direction: row;
 }
 
+@media (max-width:747px){
+    .box > .product{
+        flex: 50%;
+    }
+
+}
+
 @media (max-width:600px){
     .box{
         flex-direction: column;
