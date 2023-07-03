@@ -65,6 +65,7 @@ section{
 
 
 
+
 /*https://www.w3schools.com/css/css_image_transparency.asp*/
 img{
   width:30rem;
@@ -84,6 +85,7 @@ img{
   width:100%;
   color:white;
   position: relative;
+  z-index: -10;
 }
 
 .cover-photo img{
@@ -148,6 +150,7 @@ nav{
   flex:1;
   font-size:1.25rem;
   text-align: right;
+  margin:auto 0;
 }
 
 nav ul{

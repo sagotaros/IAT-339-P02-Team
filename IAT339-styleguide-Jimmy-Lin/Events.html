@@ -11,6 +11,7 @@
     <link href="css/fonts.css" type="text/css" rel="stylesheet">
     <link href="css/flexbox.css" type="text/css" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6afd2f9a19.js" crossorigin="anonymous" rel="stylesheet"></script>
 
   </head>
 
@@ -19,17 +20,22 @@
     <header>
       <div class="nav-main">
         <H1><a href="index.html">KOSMOS</a></H1>
+
         <nav>
-            <ul>
+<!-- watched tutorial for responsive nav bar 
+  https://www.youtube.com/watch?v=HbBMp6yUXO0-->
+          <button class="menu-icon" aria-controls="nav-items" aria-expanded="false">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+          </button>
+            <ul class="nav-items" data-visible="false">
                 <li><a href="styleguide.html" class="box-item-nav" >Style Guide</a> </li>     
                 <li><a href="about.html" class="box-item-nav" >About</a> </li>
-                <li><a href="Events.html" class="box-item-nav current-page" >Events</a></li>
+                <li><a href="Events.html" class="box-item-nav" >Events</a></li>
                 <li><a href="Contact.html" class="box-item-nav" >Contact</a> </li>  
                 <li><a href="product.html" class="box-item-nav" >Product</a></li>
                 <li><a href="checkoutcart.html" class="box-item-nav"><img class="cart-icon" src="./img/shopping-cart.png" alt="icon of a shopping cart" scale="0"></a></li>
             </ul>
         </nav>
-      </div>
     </header>
 
         <h2>Events</h2>
@@ -96,5 +102,6 @@
             </div>
           </div>
       </div>
+      <script src="index.js"></script>  
   </body>
 </html>
