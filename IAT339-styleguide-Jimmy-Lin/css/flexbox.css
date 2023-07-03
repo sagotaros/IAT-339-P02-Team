@@ -67,4 +67,24 @@
     max-width: 100%;
 }
 
+.pages{
+    margin:auto;
+}
 
+.pages span{
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #6C6D9B;
+    color: white;
+    width:2.2rem;
+    height:2.2rem;
+    text-align: center;
+    line-height: 2.2rem;
+    margin-right: 1.1rem;
+}
+
+.pages span:hover{
+    background-color: #F27EB1;
+    
+}
