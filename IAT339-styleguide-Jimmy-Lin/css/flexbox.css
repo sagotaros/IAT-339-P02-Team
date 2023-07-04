@@ -50,7 +50,7 @@
     .menu-icon{
         display: block;
         z-index: 12;
-        position: absolute;
+        position: fixed;
         background: none;
         border: 0;
         top: 2rem;
