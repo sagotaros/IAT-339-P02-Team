@@ -6,12 +6,15 @@ html{
   scroll-behavior: smooth;
 }
 
-body {
+body{
   font-family: "Karla";
   margin:1rem;
-  padding: 2rem;
   color: #313639;
   background-color: #F6F5EC;
+}
+
+.body{
+  padding: 1.1rem 2rem 1.01rem 2rem;
 }
 
 h1, h2, h3, h4{
@@ -89,14 +92,16 @@ img{
 }
 
 .cover-photo img{
+
   opacity: 95%;
+  object-fit: cover;
 }
 
 
 .centered{
   position:absolute;
-  top: 50%;
-  bottom: 50%;
+  top: 70%;
+  bottom: 30%;
   left:10%;
   right:10%;
   text-align: center;
@@ -104,7 +109,13 @@ img{
 }
 
 .centered > h1{
-  font-size: 3.5rem;
+  font-size: 4rem;
+}
+
+@media (max-width:1034px){
+  .centered > h1{
+    font-size: 2rem;
+  }
 }
 
 .cart-icon{
