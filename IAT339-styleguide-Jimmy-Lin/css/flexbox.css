@@ -49,6 +49,10 @@
         top: 2rem;
         right:2rem;
     }
+
+    .centered > h1{
+        font-size: 2.5rem;
+      }
 }
 
 .box{
@@ -68,6 +72,7 @@
 @media (max-width:600px){
     .box{
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -101,7 +106,6 @@
 }
 
 .product-description{
-    flex-basis: 50%;
     min-width: 300px;
 }
 
