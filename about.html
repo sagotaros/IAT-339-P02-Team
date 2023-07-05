@@ -5,40 +5,52 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About</title>
+    <title>About - KOSMOS</title>
 
     <link href="css/main.css" type="text/css" rel="stylesheet">
     <link href="css/fonts.css" type="text/css" rel="stylesheet">
     <link href="css/flexbox.css" type="text/css" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6afd2f9a19.js" crossorigin="anonymous" rel="stylesheet"></script>
 
   </head>
 
   <body>
 
     <header>
+      <div class="announcement">
+        <h3>FREE SHIPPING ON ALL ORDERS OVER $85</h3>
+      </div>
+      <div class="body">
         <div class="nav-main">
-            <H1>KOSMOS</H1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="nav-main-item box-item-nav" >Style Guide</a> </li>     
-                    <li><a href="about.html" class="nav-main-item box-item-nav" >About</a> </li>
-                    <li><a href="Contact.html" class="nav-main-item box-item-nav" >Contact</a> </li>  
-                    <li><a href="product.html" class="nav-main-item box-item-nav" >Product</a></li>
-                    <li><a href="Events.html" class="nav-main-item box-item-nav" >Events</a></li>
-                    <li><a href="checkoutcart.html" class="nav-main-item box-item-nav"><img class="cart-icon" src="img/shopping-cart.png" alt="icon of a shopping cart" scale="0"></a></li>
-                </ul>
-            </nav>
+          <H1><a href="index.html">KOSMOS</a></H1>
+  
+          <nav>
+  <!-- watched tutorial for responsive nav bar 
+    https://www.youtube.com/watch?v=HbBMp6yUXO0-->
+            <button class="menu-icon" aria-controls="nav-items" aria-expanded="false">
+              <i class="fa-solid fa-bars fa-2xl"></i>
+            </button>
+              <ul class="nav-items" data-visible="false">
+                  <li><a href="styleguide.html" class="box-item-nav" >Style Guide</a> </li>     
+                  <li><a href="about.html" class="box-item-nav current-page" >About</a> </li>
+                  <li><a href="Events.html" class="box-item-nav" >Events</a></li>
+                  <li><a href="contact.html" class="box-item-nav" >Contact</a> </li>  
+                  <li><a href="product.html" class="box-item-nav" >Product</a></li>
+                  <li><a href="checkoutcart.html" class="box-item-nav"><img class="cart-icon" src="./img/shopping-cart.png" alt="icon of a shopping cart" scale="0"></a></li>
+              </ul>
+          </nav>  
           </div>
+      </div>
+      
+                    
     </header>
-
-    <h2>About Us</h2>
+    <div class="body">
+      <h2>About Us</h2>
     <div class="box">
       <div class="product">
         <div class="box-item-image">
-          <figure>
             <img src="https://media.wired.co.uk/photos/606da5a26a2b7484dab93119/master/w_1920%2Cc_limit/Untitled-1_24.jpg">
-          </figure>
         </div>
         <div class="box-item-text">
           <h4>Company Information</h4>
@@ -54,9 +66,7 @@
 
       <div class="product">
         <div class="box-item-image">
-          <figure>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv-VRNrWLeOr2sVsMPVEqlpgCQ8QKCSTM8PxEacMEXR5jDOekUjIcNcgvg-zDsHMbS7L0&usqp=CAU" >
-          </figure>
         </div>
         <div class="box-item-text">
           <h4>KOSMOS Member Point Reward Program</h4>
@@ -74,9 +84,7 @@
 
       <div class="product">
         <div class="box-item-image">
-          <figure>
             <img src="https://thumbs.dreamstime.com/z/premium-membership-badges-38220862.jpg" >
-          </figure>
         </div>
         <div class="box-item-text">
           <h4>Become a KOSMOS member and enjoy exclusive benefits</h4>
@@ -87,6 +95,9 @@
             <p>As our member, you will regularly receive exclusive gifts and premiums prepared by us, and feel our care and gratitude for you.</p>
           
     </section>
+    </div>
+    
+    <script src="index.js"></script>  
     </body>
     </html>
     

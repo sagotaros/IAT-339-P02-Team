@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KOSMOS - Home</title>
+
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/fonts.css" type="text/css" rel="stylesheet">
+    <link href="css/flexbox.css" type="text/css" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6afd2f9a19.js" crossorigin="anonymous" rel="stylesheet"></script>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div class="announcement">
+        <h3>FREE SHIPPING ON ALL ORDERS OVER $85</h3>
+      </div>
+
+      <div class="body">
+      
+      
+        <div class="nav-main">
+          <H1><a href="index.html">KOSMOS</a></H1>
+
+          <nav>
+  <!-- watched tutorial for responsive nav bar 
+    https://www.youtube.com/watch?v=HbBMp6yUXO0-->
+            <button class="menu-icon" aria-controls="nav-items" aria-expanded="false">
+              <i class="fa-solid fa-bars fa-2xl"></i>
+            </button>
+              <ul class="nav-items" data-visible="false">
+                  <li><a href="styleguide.html" class="box-item-nav" >Style Guide</a> </li>     
+                  <li><a href="about.html" class="box-item-nav" >About</a> </li>
+                  <li><a href="Events.html" class="box-item-nav" >Events</a></li>
+                  <li><a href="contact.html" class="box-item-nav" >Contact</a> </li>  
+                  <li><a href="product.html" class="box-item-nav" >Product</a></li>
+                  <li><a href="checkoutcart.html" class="box-item-nav"><img class="cart-icon" src="./img/shopping-cart.png" alt="icon of a shopping cart" scale="0"></a></li>
+              </ul>
+          </nav>
+  
+        </div>
+      </div>
+    </header>
+
+    <!-- references for making image change when window size is changed.
+      https://stackoverflow.com/questions/30460681/changing-image-src-depending-on-screen-size-->
+      <section>
+        <div class="cover-photo">
+          <picture>
+          <source media="(max-width: 750px)" srcset="https://dbkpop.com/wp-content/uploads/2023/04/newjeans_omg_haerin_1.jpg">
+          <img src="./img/newjeans-homepage-pic.jpg" alt="picture of 5 girls." width="100%">
+        </picture>
+        </div>
+          <div class="centered">
+            <h1>Your KOSMOS Journey Starts Here!</h1>
+            <a href="product.html"><button type="button" class="button">SHOP NOW</button></a>
+          </div>
+      </section>
+      <script src="index.js"></script>  
+    </div>
+  </body>
+</html>

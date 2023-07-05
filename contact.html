@@ -11,35 +11,47 @@
     <link href="css/fonts.css" type="text/css" rel="stylesheet">
     <link href="css/flexbox.css" type="text/css" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6afd2f9a19.js" crossorigin="anonymous" rel="stylesheet"></script>
 
   </head>
 
   <body>
 
     <header>
+      <div class="announcement">
+        <h3>FREE SHIPPING ON ALL ORDERS OVER $85</h3>
+      </div>
+      <div class="body">
         <div class="nav-main">
-            <H1>KOSMOS</H1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="nav-main-item box-item-nav" >Style Guide</a> </li>     
-                    <li><a href="about.html" class="nav-main-item box-item-nav" >About</a> </li>
-                    <li><a href="Contact.html" class="nav-main-item box-item-nav" >Contact</a> </li>  
-                    <li><a href="product.html" class="nav-main-item box-item-nav" >Product</a></li>
-                    <li><a href="Events.html" class="nav-main-item box-item-nav" >Events</a></li>
-                    <li><a href="checkoutcart.html" class="nav-main-item box-item-nav"><img class="cart-icon" src="img/shopping-cart.png" alt="icon of a shopping cart" scale="0"></a></li>
-                </ul>
-            </nav>
+          <H1><a href="index.html">KOSMOS</a></H1>
+  
+          <nav>
+  <!-- watched tutorial for responsive nav bar 
+    https://www.youtube.com/watch?v=HbBMp6yUXO0-->
+            <button class="menu-icon" aria-controls="nav-items" aria-expanded="false">
+              <i class="fa-solid fa-bars fa-2xl"></i>
+            </button>
+              <ul class="nav-items" data-visible="false">
+                  <li><a href="styleguide.html" class="box-item-nav" >Style Guide</a> </li>     
+                  <li><a href="about.html" class="box-item-nav" >About</a> </li>
+                  <li><a href="Events.html" class="box-item-nav" >Events</a></li>
+                  <li><a href="contact.html" class="box-item-nav current-page" >Contact</a> </li>  
+                  <li><a href="product.html" class="box-item-nav" >Product</a></li>
+                  <li><a href="checkoutcart.html" class="box-item-nav"><img class="cart-icon" src="./img/shopping-cart.png" alt="icon of a shopping cart" scale="0"></a></li>
+              </ul>
+          </nav>
           </div>
+      </div>
+
+      
     </header>
 
-
-    <h2> Contact Us</h2>
+    <div class="body">
+      <h2> Contact Us</h2>
     <div class="box">
       <div class="product">
         <div class="box-item-image">
-          <figure>
             <img src="https://thumbs.dreamstime.com/z/black-line-chat-bot-cute-smiling-chatbot-icon-robot-virtual-assistance-online-consultation-black-line-chat-bot-white-background-121218496.jpg">
-          </figure>
         </div>
         <div class="box-item-text">
           <h4>Online AI consultation</h4>
@@ -53,9 +65,7 @@
 
       <div class="product">
         <div class="box-item-image">
-          <figure>
             <img src="https://thumbs.dreamstime.com/z/first-aid-icon-vector-male-doctor-person-profile-avatar-stethoscope-phone-medical-health-care-consultation-glyph-148148103.jpg" >
-          </figure>
         </div>
         <div class="box-item-text">
           <h4>In Person Consultation</h4>
@@ -81,5 +91,10 @@
 
 
     </section>
+    </div>
+
+
+    
+    <script src="index.js"></script>  
   </body>
 </html>

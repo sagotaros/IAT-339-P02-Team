@@ -6,16 +6,24 @@ html{
   scroll-behavior: smooth;
 }
 
-body {
+body{
   font-family: "Karla";
   margin:1rem;
-  padding: 2rem;
   color: #313639;
   background-color: #F6F5EC;
 }
 
+.body{
+  padding: 1.1rem 2rem 1.01rem 2rem;
+}
+
 h1, h2, h3, h4{
   font-family: "Rubik";
+}
+
+legend{
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .element {
@@ -27,11 +35,6 @@ h1, h2, h3, h4{
   border-top-color: black;
 }
 
-
-section{
-  margin-top: 2rem;
-  margin-top: 2rem;
-}
 
 .color1{
   background-color: #FFF1DB;
@@ -60,12 +63,54 @@ section{
 
 
 
+
 /*https://www.w3schools.com/css/css_image_transparency.asp*/
 img{
   width:30rem;
   max-width: 100%;
   opacity: 1;
   transition: opacity .5s ease-in-out;
+}
+
+.product img:hover, .cart-icon:hover{
+  opacity: 0.70;
+  transform: scale(1.05);
+}
+
+
+.cover-photo, .cover-photo img, .cover-photo h1{
+  max-width: 100%;
+  width:100%;
+  color:white;
+  position: relative;
+  z-index: -10;
+}
+
+.cover-photo img{
+
+  opacity: 95%;
+  object-fit: cover;
+}
+
+
+.centered{
+  position:absolute;
+  top: 70%;
+  bottom: 30%;
+  left:10%;
+  right:10%;
+  text-align: center;
+  color: white;
+}
+
+.centered > h1{
+  font-size: 4rem;
+}
+
+@media (max-width:1034px){
+  .centered > h1{
+    font-size: 2rem;
+  }
 }
 
 .cart-icon{
@@ -80,10 +125,7 @@ img{
   display:flex;
 }
 
-img:hover{
-  opacity: 0.70;
-  transform: scale(1.05);
-}
+
 
 h2.general {
   margin-top: 6rem;
@@ -112,12 +154,14 @@ a:hover, a:focus, a:active{
   color:#F27EB1;
   transform: scale(1.05);
   text-decoration:underline;
+  transition: color 0.5s ease-out;
 }
 
 nav{
   flex:1;
   font-size:1.25rem;
   text-align: right;
+  margin:auto 0;
 }
 
 nav ul{
@@ -130,9 +174,8 @@ nav ul li{
   margin-right: 20px;
 }
 
+
 .button{
-
-
   text-decoration: none;
   padding: 0.5rem;
   font-size: 1.5rem;
@@ -196,7 +239,6 @@ code {
 
 form{
   overflow:hidden;
-  max-width: 55rem;
 }
 
 fieldset{
@@ -205,13 +247,13 @@ fieldset{
   padding:0;
 }
 
-input{
+input, textarea{
   border-radius: 2px;
   padding: 1%;
   margin: 5%;
 }
 
-input:hover{
+input:hover, textarea:hover{
   background-color: #FFF1DB;
 }
 
