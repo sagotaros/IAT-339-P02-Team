@@ -1,3 +1,4 @@
+"use strict";
 const menuItem = document.querySelector('.nav-items');
 const menuIcon = document.querySelector('.menu-icon');
 const stars = document.querySelectorAll('.ratings-click i');
@@ -23,3 +24,7 @@ menuIcon.addEventListener('click',() => {
         menuIcon.setAttribute('aria-expanded', false)
     }
 });
+
+function reviewAlert(){
+    alert("Thank you for the review!");
+}
