@@ -183,6 +183,10 @@ nav ul li{
   margin-right: 20px;
 }
 
+#citations{
+  max-width:100%;
+  word-wrap: break-word;
+}
 
 .button{
   text-decoration: none;
