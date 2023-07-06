@@ -131,10 +131,8 @@ img{
 }
 
 .image-box{
-  width:13rem;
+  width:15%;
   max-width: 100%;
-  text-align: center;
-  display:flex;
 }
 
 
@@ -203,18 +201,25 @@ nav ul li{
 .cart-items{
   justify-content: space-between;
   display:flex;
-  margin:5rem;
   align-items: center;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+
+
+.details{
+  font-size: 1.2rem;
+  font-weight: bold;
+  max-width: 30%;
 }
 
 .total-price{
-  font-size: 1.50rem;
+  font-size: 2rem;
   font-weight: bold;
-  justify-content: right;
-  width: 97%;
-  display:flex;
-  margin-right:5.2rem;
-  margin-bottom: 5rem;
+  text-align: right;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .amount{
@@ -250,6 +255,7 @@ code {
 
 form{
   overflow:hidden;
+
 }
 
 fieldset{
@@ -277,15 +283,12 @@ select:hover{
   background-color: #FFF1DB;
 }
 
-.card-info{
-  padding: 20px 20px 0 20px;
-}
 
 .card-info label{
   color: black;
   display: block;
   font-weight: bold;
-  margin-bottom: 20px;
+
 }
 
 .checkout .button{
