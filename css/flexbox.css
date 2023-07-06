@@ -210,3 +210,34 @@
     margin-top: 3em;
     text-align: center;
 }
+
+.footer {
+    background-color:  #6C6D9B;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left img {
+    height: 60px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-text{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+
+  }
+  
+
