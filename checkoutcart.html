@@ -46,73 +46,82 @@
     </header>
     <div class="body">
       <h2>Checkout Cart</h2>
-        <section class="cart-items">
-        <div class="image-box">
-          <img src="https://smglobalshop.com/cdn/shop/products/pre-order-2023-aespa-1st-concert-synk-hyper-line-fur-mini-bag-set-blue-ver-439001_960x_crop_center.jpg?v=1677661185" alt="picture of blue fuzzy fur bag">
+        <div>
+          <section>  
+            <section class="cart-items">
+              <div class="image-box">
+                <img src="https://smglobalshop.com/cdn/shop/products/pre-order-2023-aespa-1st-concert-synk-hyper-line-fur-mini-bag-set-blue-ver-439001_960x_crop_center.jpg?v=1677661185" alt="picture of blue fuzzy fur bag">
+              </div>
+              <div class="details">
+                <p>FUR MINI BAG</p>
+              </div>
+              <div class="details">
+                <p>1</p>
+              </div>
+              <div class="details">
+                <p>$118.00</p>
+              </div>
+            </section>
+    
+          <section class="cart-items">
+            <div class="image-box">
+              <img src="https://smglobalshop.com/cdn/shop/files/SM_Official_aespa_MYWORLD_MD_Tshirt_02_960x_crop_center.jpg?v=1686283029" alt="picture of pink t-shirt">
+            </div>
+            <div class="details">
+              <p>MY WORLD T-Shirt</p>
+            </div>
+            <div class="details">
+              <p>1</p>
+            </div>
+            <div class="details">
+              <p>$56.00</p>
+            </div>
+          </section>
+    
+          <hr>
+          <section class="total-price">
+            <div class="total"><h5>Total: $174.00</h5></div>
+          </section>
         </div>
-        <div class="details">
-          <h3>FUR MINI BAG SET [BLUE VER.]</h3>
-        </div>
-        <div class="amount">
-          <div name="count">1</div>
-        </div>
-        <div class="price">
-          <div name="money">$118.00</div>
-        </div>
-      </section>
-      <section class="cart-items">
-        <div class="image-box">
-          <img src="https://smglobalshop.com/cdn/shop/products/pre-order-aespa-oh-caendy-pocket-ball-cap-573207_960x_crop_center.jpg?v=1678889048" alt="picture of pink ball cap">
-        </div>
-        <div class="details">
-          <h3>[OH! CAENDY POCKET] BALL CAP</h3>
-        </div>
-        <div class="amount">
-          <div name="count">1</div>
-        </div>
-        <div class="price">
-          <div name="money">$56.00</div>
-        </div>
-      </section>
-      <hr>
-      <section class="total-price">
-        <div class="total">Total: $174.00</div>
-      </section>
 
-
-        <legend>Payment Form</legend>
-        <form method="post" action="#">
-          <fieldset class="card-info" name="card-info">
-          <label for="card-num">Card Number:
-          <input type="text" id="card-num" placeholder="1234 1234 1234 1234" required>
-        </label>
-
-          <label for="postal-code">Postal Code:
-          <input type="text" id="postal-code" placeholder="A1A 1A1" required>
-        </label>
-
-          <label for="country">Country:
-          <select name="country" id="country">
-            <option value="Canada" selected>Canada</option>
-            <option value="United States">United States</option>
-            <option value="China">China</option>
-            <option value="Korea">Korea</option>
-            <option value="Japan">Japan</option>
-          </select>
-        </label>
-
-          <label for="exp-date">Expiration Date:
-          <input type="month" id="exp-date" name="exp-date" required>
-        </label>
-
-          <label for="CVV">CVV:
-          <input type="text" id="CVV" name="CVV" placeholder="123" required>
-        </label>
-      </fieldset>
-      <fieldset class="checkout" name="checkout">
-          <input class="button" type="submit" name="submit" value="Checkout">
-        </fieldset>
-        </form>
+        <h2>Payment Form</h2>
+          <form method="post" action="#">
+            
+            <fieldset class="card-info flex-box" name="card-info">
+              <label for="card-type">Card Type
+              <select name="card-type" id="card-type">
+                <option value="Credit Card" selected>Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="PayPal">PayPal</option>
+              </select>
+            </label>
+            </fieldset>
+  
+            <fieldset class="card-info flex-box" name="card-info">
+              <label for="full-name">Name on Card
+                <input type="text" id="full-name" placeholder="Full Name" required>
+              </label>
+  
+              <label for="card-num">Card Number
+                <input type="text" id="card-num" placeholder="1234 1234 1234 1234" required>
+              </label>
+            </fieldset>
+  
+          
+            <fieldset class="card-info flex-box" name="card-info">
+              <label for="exp-date">Expiration Date
+                <input type="month" id="exp-date" name="exp-date" required>
+             </label>  
+  
+              <label for="CVV">CVV
+                <input type="text" id="CVV" name="CVV" placeholder="123" required>
+              </label> 
+            </fieldset>
+  
+            <fieldset class="checkout" name="checkout">
+              <input class="button" type="submit" name="submit" value="Checkout">
+            </fieldset>
+          </form>
 
     </div>
 

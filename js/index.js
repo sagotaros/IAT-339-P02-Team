@@ -28,3 +28,4 @@ menuIcon.addEventListener('click',() => {
 function reviewAlert(){
     alert("Thank you for the review!");
 }
+

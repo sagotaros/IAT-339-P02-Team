@@ -11,6 +11,12 @@ body{
   margin:1rem;
   color: #313639;
   background-color: #F6F5EC;
+  overflow-x: hidden;
+}
+
+.center{
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 .body{
@@ -78,29 +84,35 @@ img{
 }
 
 
-.cover-photo, .cover-photo img, .cover-photo h1{
+.cover-photo{
   max-width: 100%;
-  width:100%;
-  color:white;
   position: relative;
-  z-index: -10;
 }
 
 .cover-photo img{
-
+  width: 100%;
+  height: auto;
   opacity: 95%;
   object-fit: cover;
+}
+
+.cover-photo h1{
+  color:white;
 }
 
 
 .centered{
   position:absolute;
-  top: 70%;
-  bottom: 30%;
+  top: 50%;
+  bottom: 50%;
   left:10%;
   right:10%;
   text-align: center;
   color: white;
+}
+
+.centered a{
+  z-index: 15;
 }
 
 .centered > h1{
@@ -119,10 +131,8 @@ img{
 }
 
 .image-box{
-  width:13rem;
+  width:15%;
   max-width: 100%;
-  text-align: center;
-  display:flex;
 }
 
 
@@ -153,7 +163,6 @@ a{
 a:hover, a:focus, a:active{
   color:#F27EB1;
   transform: scale(1.05);
-  text-decoration:underline;
   transition: color 0.5s ease-out;
 }
 
@@ -177,33 +186,40 @@ nav ul li{
 
 .button{
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.6rem;
   font-size: 1.5rem;
   transition: background-color 0.5s ease-out;
-
   background: #6C6D9B;
   border: 0;
   color:white;
   cursor: pointer;
-  font-weight: bold;
-  padding:10px 20px;
+  font-weight: bolder;
+  padding:15px 20px;
+  border-radius: 0.1em;
 }
 
 .cart-items{
   justify-content: space-between;
   display:flex;
-  margin:5rem;
   align-items: center;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+
+
+.details{
+  font-size: 1.2rem;
+  font-weight: bold;
+  max-width: 30%;
 }
 
 .total-price{
-  font-size: 1.50rem;
+  font-size: 2rem;
   font-weight: bold;
-  justify-content: right;
-  width: 97%;
-  display:flex;
-  margin-right:5.2rem;
-  margin-bottom: 5rem;
+  text-align: right;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .amount{
@@ -239,6 +255,7 @@ code {
 
 form{
   overflow:hidden;
+
 }
 
 fieldset{
@@ -253,7 +270,7 @@ input, textarea{
   margin: 5%;
 }
 
-input:hover, textarea:hover{
+input:hover, input:focus, textarea:hover, textarea:focus{
   background-color: #FFF1DB;
 }
 
@@ -266,15 +283,12 @@ select:hover{
   background-color: #FFF1DB;
 }
 
-.card-info{
-  padding: 20px 20px 0 20px;
-}
 
 .card-info label{
   color: black;
   display: block;
   font-weight: bold;
-  margin-bottom: 20px;
+
 }
 
 .checkout .button{
