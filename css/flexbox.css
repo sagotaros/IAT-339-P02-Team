@@ -96,6 +96,10 @@
         width:30%;
     }
 
+    .colours .box{
+        max-width: 100%;
+    }
+
 }
 
 .box{
@@ -265,4 +269,8 @@
 .footer .flex-box ul li a{
     text-align: center;
     margin-right: 0;
+}
+
+.box a{
+    margin-bottom: 1em;
 }

@@ -41,30 +41,59 @@ legend{
   border-top-color: black;
 }
 
+.colours .box{
+  max-width: 40%;
+  flex-wrap: wrap;
+}
+
 
 .color1{
   background-color: #FFF1DB;
+
+  border:#313639;
+  border-style: solid;
+  max-width: 33.33%;
 }
 
 .color2{
   background-color: #313639;
   color:white;
+
+  border:#313639;
+  border-style: solid;
+  max-width: 33.33%;
 }
 
 .color3{
   background-color: #F6F5EC;
+
+  border:#313639;
+  border-style: solid;
+  max-width: 33.33%;
 }
 
 .color4{
+
   background-color: #F27EB1;
+  border:#313639;
+  border-style: solid;
+  max-width: 33.33%;
 }
 
 .color5{
+
   background-color: #6C6D9B;
+  border:#313639;
+  border-style: solid;
+  max-width: 33.33%;
 }
 
 .color6{
+
   background-color: #F9B3BB;
+  border:#313639;
+  border-style: solid;
+  max-width: 33.33%;
 }
 
 
@@ -333,6 +362,14 @@ select:hover{
 .button-nav:hover, .button-nav:focus {
   background-color: rgb(200,200,200);
 }
+
+.pics{ 
+  max-width: 25%;
+}
+
+
+
+
 
 
 
