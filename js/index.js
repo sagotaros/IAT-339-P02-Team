@@ -29,3 +29,7 @@ function reviewAlert(){
     alert("Thank you for the review!");
 }
 
+function checkoutAlert(){
+    alert("Thank you for the purchase!");
+}
+
