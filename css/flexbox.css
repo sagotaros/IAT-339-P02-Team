@@ -108,7 +108,18 @@
         width:100% !important;
     }
 
+    .comments{
+        flex-direction: column;
+    }
 
+    .comments-text{
+        width:100% !important;
+        padding-right: 2em;
+    }
+
+    .comments-img{
+        width:90% !important;
+    }
 }
 
 .box{
@@ -319,4 +330,41 @@
     display: block;
     text-align: center;
     margin: 1em;
+}
+
+.comments{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #FFF1DB;
+    justify-content:flex-start;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width:100%;
+    border-color: #6C6D9B;
+    border-style: solid;
+    border-width: 0.15em;
+}
+
+.comments img{
+    border-radius: 50%;
+
+    height: auto;
+    text-align: center;
+}
+
+.comments div{
+    margin: 1em;
+}
+
+.comments-img{
+    width:15%;
+}
+
+.comments-text{
+    width:80%;
+}
+
+.comments-text p{
+    max-width: 100%;
 }
