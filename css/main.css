@@ -12,6 +12,9 @@ body{
   color: #313639;
   background-color: #F6F5EC;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .center{
@@ -21,11 +24,13 @@ body{
 
 .body{
   padding: 1.1rem 2rem 1.01rem 2rem;
+
 }
 
 h1, h2, h3, h4{
   font-family: "Rubik";
 }
+
 
 legend{
   font-size: 1.5rem;
